@@ -1,0 +1,24 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- My Apps:
+    - Books:
+        icon: calibre.png
+        href: http://calibre.chanel-server.tail14cd7.ts.net/
+        description: Calibre Web
+        container: calibre-web
+    - Photos:
+        icon: immich.png
+        href: http://immich.chanel-server.tail14cd7.ts.net/
+        description: Immich
+    - Syncthing:
+        icon: syncthing.png
+        href: http://chanel-server.tail14cd7.ts.net:8384
+        description: Syncthing
+        siteMonitor: http://chanel-server.tail14cd7.ts.net:8384
+
+# - My Third Group:
+#     - My Third Service:
+#         href: http://localhost/
+#         description: Homepage is 😎

@@ -1,0 +1,9 @@
+title: Chanel's Homepage
+background:
+  image: /images/above_the_lights_by_yuumei_d8rr0oe-pre.jpg
+  blur: sm
+  brightness: 100
+  opacity: 50
+theme: dark
+base: http://home
+# showStats: true

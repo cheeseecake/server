@@ -1,9 +1,10 @@
 include:
   - immich/compose.yml
   - calibre-web/compose.yml
+  - homepage/compose.yml
 
 services:
-    ts-immich:
+    ts-immich: &tailscale # This means that the config below is 'copied' into the variable named 'tailscale'. We can use this variable later on with '<<: tailscale'.
       image: tailscale/tailscale
       container_name: ts-immich
       hostname: immich
@@ -20,17 +21,17 @@ services:
         - ./tailscale/immich:/var/lib/tailscale
 
     ts-calibre-web:
-      image: tailscale/tailscale
+      <<: *tailscale
       container_name: ts-calibre-web
       hostname: calibre
-      restart: always
-      environment:
-        TS_AUTH_KEY: ${TS_AUTH_KEY}
-        TS_STATE_DIR: /var/lib/tailscale
-        TS_EXTRA_ARGS: --advertise-tags=tag:container
-      cap_add:
-        - net_admin
-        - sys_module
       volumes:
         - /dev/net/tun:/dev/net/tun
         - ./tailscale/calibre-web:/var/lib/tailscale
+
+    ts-homepage:
+      <<: *tailscale
+      container_name: ts-homepage
+      hostname: home
+      volumes:
+        - /dev/net/tun:/dev/net/tun
+        - ./tailscale/homepage:/var/lib/tailscale
