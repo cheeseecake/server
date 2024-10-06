@@ -8,3 +8,5 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
       - ./images:/app/public/images
     network_mode: service:ts-homepage
+    environment:
+      PORT: 80

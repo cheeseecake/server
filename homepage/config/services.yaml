@@ -5,13 +5,14 @@
 - My Apps:
     - Books:
         icon: calibre.png
-        href: http://calibre.chanel-server.tail14cd7.ts.net/
+        href: http://calibre.tail14cd7.ts.net/
         description: Calibre Web
         container: calibre-web
     - Photos:
         icon: immich.png
-        href: http://immich.chanel-server.tail14cd7.ts.net/
+        href: http://immich.tail14cd7.ts.net/
         description: Immich
+        container: immich_server
     - Syncthing:
         icon: syncthing.png
         href: http://chanel-server.tail14cd7.ts.net:8384
