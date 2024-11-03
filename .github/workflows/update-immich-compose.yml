@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 8 * * *" # 8AM UTC daily
 
+permissions:
+  pull-requests: write
+
 jobs:
   check-new-version:
     runs-on: ubuntu-latest
