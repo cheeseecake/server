@@ -27,7 +27,6 @@ services:
     restart: always
     healthcheck:
       disable: false
-    network_mode: service:ts-immich
 
   immich-machine-learning:
     container_name: immich_machine_learning
