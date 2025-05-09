@@ -5,7 +5,7 @@ services:
     restart: always
     volumes:
       - ./config:/app/config # Make sure your local config directory exists
-      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
       - ./images:/app/public/images
     environment:
       PORT: 80
+      HOMEPAGE_ALLOWED_HOSTS: home.chanelng.com

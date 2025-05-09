@@ -5,12 +5,12 @@
 - My Apps:
     - Books:
         icon: calibre.png
-        href: http://calibre.tail14cd7.ts.net/
+        href: https://calibre.chanelng.com
         description: Calibre Web
         container: calibre-web
     - Photos:
         icon: immich.png
-        href: http://immich.tail14cd7.ts.net/
+        href: https://immich.chanelng.com
         description: Immich
         container: immich_server
     - Syncthing:
@@ -18,8 +18,3 @@
         href: http://chanel-server.tail14cd7.ts.net:8384
         description: Syncthing
         siteMonitor: http://chanel-server.tail14cd7.ts.net:8384
-
-# - My Third Group:
-#     - My Third Service:
-#         href: http://localhost/
-#         description: Homepage is 😎

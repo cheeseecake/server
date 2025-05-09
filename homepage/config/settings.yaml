@@ -5,5 +5,5 @@ background:
   brightness: 100
   opacity: 50
 theme: dark
-base: http://home
+base: https://home.chanelng.com
 # showStats: true
