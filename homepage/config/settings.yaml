@@ -2,8 +2,18 @@ title: Chanel's Homepage
 background:
   image: /images/above_the_lights_by_yuumei_d8rr0oe-pre.jpg
   blur: sm
-  brightness: 100
+  brightness: 80
   opacity: 50
 theme: dark
 base: https://home.chanelng.com
 # showStats: true
+
+hideVersion: true
+layout:
+  Calendar:
+    header: false
+  Links:
+    header: false
+  My Apps:
+    style: row
+    columns: 4

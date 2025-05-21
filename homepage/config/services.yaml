@@ -18,3 +18,16 @@
         href: http://chanel-server.tail14cd7.ts.net:8384
         description: Syncthing
         siteMonitor: http://chanel-server.tail14cd7.ts.net:8384
+
+- Calendar:
+    - Calendar:
+        widget:
+          type: calendar
+          showTime: true # optional - show time for event happening today - defaults to false
+          integrations:
+            - type: ical
+              url: "{{HOMEPAGE_VAR_SHARED_CALENDAR}}"
+              name: Shared # required - name for these calendar events
+              color: amber # optional - defaults to pre-defined color for the service (zinc for ical)
+              params: # optional - additional params for the service
+                showName: true # optional - show name before event title in event line - defaults to false
